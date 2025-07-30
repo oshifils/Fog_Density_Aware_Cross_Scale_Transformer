@@ -1,24 +1,24 @@
-# Fog_Density_Aware_Cross_Scale_Transformer
-# EDCST : Enhanced Density-Aware Cross-Scale Transformer for Robust Object Classification under Atmospheric Fog Conditions
 
-Un projet de recherche avancé sur la classification robuste d’objets sous différentes intensités et types de brouillard, basé sur un modèle Transformer multi-échelle avec attention sensible à la densité.
+# Fog
 
-## 🧠 Objectif
+An advanced research project on robust object classification under various fog intensities and types, based on a multi-scale Transformer model with density-aware attention.
 
-Développer un classificateur d'images performant capable de conserver une haute précision même dans des conditions visuelles dégradées par le brouillard.  
-Le modèle s’appuie sur :
-- Un mécanisme d’attention croisée entre les échelles
-- Une stratégie d’optimisation basée sur OneCycleLR
-- Cinq types de brouillard (uniforme, gradient, patchy, adaptatif, dense)
+## 🧠 Objective
 
-## 🚀 Fonctionnalités principales
+To develop a high-performance image classifier capable of maintaining strong accuracy even under visually degraded conditions caused by fog.  
+The model leverages:
+- A cross-scale attention mechanism
+- An optimization strategy based on OneCycleLR
+- Five types of fog (uniform, gradient, patchy, adaptive, dense)
 
-- Simulations réalistes de brouillard sur CIFAR-10
-- Architecture personnalisée à base de Vision Transformers
-- Analyse de robustesse par classe (class-wise sensitivity)
-- Visualisation des résultats de classification
+## 🚀 Key Features
 
-## 📦 Technologies utilisées
+- Realistic fog simulations on CIFAR-10
+- Custom architecture based on Vision Transformers
+- Class-wise robustness analysis
+- Visualization of classification results
+
+## 📦 Technologies Used
 
 - Python 3.10
 - PyTorch
@@ -28,13 +28,13 @@ Le modèle s’appuie sur :
 - OpenCV
 - Jupyter Notebook
 
-## 📁 Structure du projet
+## 📁 Project Structure
 
 ```
 .
 ├── Fog_Density_Aware_Cross_Scale_Transformer_5Types_Fog_Optimizing.ipynb
 ├── data/
-│   └── (CIFAR-10 images simulées avec brouillard)
+│   └── (CIFAR-10 images simulated with fog)
 ├── models/
 │   └── transformer_fdacst.py
 ├── utils/
@@ -45,59 +45,59 @@ Le modèle s’appuie sur :
 
 ## ⚙️ Installation
 
-1. Cloner le dépôt :
+1. Clone the repository:
 ```bash
 git clone https://github.com/oshifils/Fog_Density_Aware_Cross_Scale_Transformer.git
 cd Fog_Density_Aware_Cross_Scale_Transformer
 ```
 
-2. Créer un environnement virtuel (optionnel mais recommandé) :
+2. Create a virtual environment (optional but recommended):
 ```bash
 python -m venv venv
-source venv/bin/activate  # sous Linux/macOS
-venv\Scripts\activate     # sous Windows
+source venv/bin/activate  # for Linux/macOS
+venv\Scripts\activate     # for Windows
 ```
 
-3. Installer les dépendances :
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🧪 Lancer le Notebook
+## 🧪 Running the Notebook
 
-Ouvre le notebook dans Jupyter :
+Open the notebook in Jupyter:
 ```bash
 jupyter notebook Fog_Density_Aware_Cross_Scale_Transformer_5Types_Fog_Optimizing.ipynb
 ```
 
-> ⚠️ Assurez-vous que les images CIFAR-10 modifiées avec brouillard sont bien placées dans `./data`.
+> ⚠️ Ensure that the fog-augmented CIFAR-10 images are correctly placed in the `./data` directory.
 
-## 📊 Résultats obtenus
+## 📊 Results
 
-| Condition             | Accuracy (%) |
-|-----------------------|--------------|
-| Sans brouillard       | 84.4         |
-| Brouillard léger      | 81.3         |
-| Brouillard moyen      | 77.5         |
-| Brouillard dense      | 74.2         |
-| Brouillard extrême    | 70.1         |
+| Condition            | Accuracy (%) |
+|----------------------|--------------|
+| No fog               | 84.4         |
+| Light fog            | 81.3         |
+| Moderate fog         | 77.5         |
+| Dense fog            | 74.2         |
+| Extreme fog          | 70.1         |
 
-- **Robustesse élevée** pour les véhicules et animaux
-- **Amélioration de 15.8%** par rapport aux Transformers standards
+- **High robustness** for vehicles and animals
+- **15.8% improvement** compared to standard Transformers
 
-## 📌 À venir
+## 📌 Future Work
 
-- Évaluation sur des jeux de données réels (Dashcam, Foggy Cityscapes)
-- Extension vers la segmentation sémantique
-- Intégration de détection d’anomalies
+- Evaluation on real-world datasets (Dashcam, Foggy Cityscapes)
+- Extension to semantic segmentation
+- Integration of anomaly detection
 
-## 👤 Auteur
+## 👤 Author
 
 - **OSHASHA OSHASHA Fiston**  
-Chercheur en intelligence artificielle appliquée et Système distribué  
-GitHub : [@oshifils](https://github.com/oshifils)
+Researcher in Applied Artificial Intelligence and Distributed Systems  
+GitHub: [@oshifils](https://github.com/oshifils)
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est publié sous licence **MIT**.  
-Vous pouvez l'utiliser, le modifier et le redistribuer librement avec attribution.
+This project is released under the **MIT License**.  
+You are free to use, modify, and redistribute it with proper attribution.
